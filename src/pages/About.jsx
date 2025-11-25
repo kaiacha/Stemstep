@@ -13,41 +13,41 @@ import {
 const teamMembers = [
   {
     name: "Zane Reynolds",
-    role: "Team Leader",
+    role: "Team Leader, Electrical Engineering",
     contributions:
-      "Concept development, IRB submission, theoretical framework alignment.",
+      "Led concept development, managed IRB submission, and aligned the project with the theoretical framework.",
     linkedin: null,
     portfolio: null,
   },
   {
     name: "Mikyo Kaia Cha",
-    role: "UX / UI Designer, Researcher",
+    role: "Human Systems Engineering, UX Designer",
     contributions:
-      "Designed the user interface and information architecture, conducted interviews and coding analysis.",
+      "Designed the website and information architecture, and conducted interviews and thematic coding analysis.",
     linkedin: null,
     portfolio: null,
   },
   {
     name: "Rashmi Neelawathura",
-    role: "Research Analyst",
+    role: "Human Systems Engineering",
     contributions:
-      "Research, conducted professor interview and coding analysis.",
+      "Conducted research, led the professor interview, and contributed to data coding and analysis.",
     linkedin: null,
     portfolio: null,
   },
   {
     name: "Foysal Ahmed",
-    role: "Developer / Technical Design",
+    role: "Civil Engineering",
     contributions:
-      "Research, conducted Undergrads interviews and coding analysis.",
+      "Conducted undergraduate interviews, supported research activities, and contributed to data coding and analysis.",
     linkedin: null,
     portfolio: null,
   },
   {
     name: "Jeremiah Brandon",
-    role: "Research Coordinator",
+    role: "Human Systems Engineering",
     contributions:
-      "Research, conducted highschool counsler interviews and coding analysis.",
+      "Conducted the high school counselor interview, contributed to research coordination, and assisted with data analysis.",
     linkedin: null,
     portfolio: null,
   },
