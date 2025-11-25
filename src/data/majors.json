@@ -1,0 +1,699 @@
+[
+  {
+    "id": "computer-science",
+    "title": "Computer Science",
+    "discipline": "Technology & Analytics",
+    "description": "Study of computation, information processing, and the design of computer systems and applications.",
+    "tagline": "Build the future with code and innovation.",
+    "overview": "Computer Science is the study of algorithms, data structures, programming languages, and the theoretical foundations of computing. Students learn to design, develop, and analyze software systems and computational solutions to complex problems.",
+    "requiredCompetencies": [
+      "Programming proficiency (Python, Java, C++, JavaScript)",
+      "Data structures and algorithms",
+      "Software engineering principles",
+      "Database design and management",
+      "Computer architecture and systems",
+      "Mathematics (calculus, discrete math, linear algebra)",
+      "Problem-solving and logical thinking"
+    ],
+    "learningPath": [
+      {
+        "level": "High School",
+        "steps": [
+          "Take advanced math courses (calculus, algebra)",
+          "Learn basic programming concepts",
+          "Participate in coding competitions",
+          "Build personal programming projects"
+        ]
+      },
+      {
+        "level": "Undergraduate",
+        "steps": [
+          "Earn Bachelor's degree in Computer Science",
+          "Complete internships at tech companies",
+          "Build portfolio of software projects",
+          "Learn multiple programming languages",
+          "Take courses in algorithms, data structures, and software engineering"
+        ]
+      },
+      {
+        "level": "Early Career",
+        "steps": [
+          "Start as junior software developer",
+          "Gain experience with industry tools and practices",
+          "Specialize in a domain (web, mobile, systems)",
+          "Obtain relevant certifications"
+        ]
+      },
+      {
+        "level": "Advanced",
+        "steps": [
+          "Consider Master's degree for specialization",
+          "Pursue senior developer or architect roles",
+          "Mentor junior developers",
+          "Stay current with emerging technologies"
+        ]
+      }
+    ],
+    "topCareers": [
+      {
+        "id": "software-engineer",
+        "title": "Software Engineer",
+        "description": "Develops software applications and systems."
+      },
+      {
+        "id": "data-scientist",
+        "title": "Data Scientist",
+        "description": "Analyzes complex data to drive business decisions."
+      },
+      {
+        "id": "web-developer",
+        "title": "Web Developer",
+        "description": "Builds and maintains websites and web applications."
+      }
+    ],
+    "relatedMajors": [
+      {
+        "id": "data-science",
+        "title": "Data Science"
+      },
+      {
+        "id": "software-engineering",
+        "title": "Software Engineering"
+      },
+      {
+        "id": "information-technology",
+        "title": "Information Technology"
+      }
+    ]
+  },
+  {
+    "id": "mechanical-engineering",
+    "title": "Mechanical Engineering",
+    "discipline": "Engineering",
+    "description": "Design and development of mechanical systems, machines, and thermal devices.",
+    "tagline": "Designs and builds machines and systems.",
+    "overview": "Mechanical Engineering involves the design, analysis, manufacturing, and maintenance of mechanical systems. Students learn to apply principles of physics, mathematics, and materials science to solve engineering problems.",
+    "requiredCompetencies": [
+      "Problem-solving and analytical thinking",
+      "Proficiency in CAD software (SolidWorks, AutoCAD)",
+      "Understanding of thermodynamics and fluid mechanics",
+      "Knowledge of materials science",
+      "Project management skills",
+      "Strong mathematical foundation",
+      "Communication and teamwork"
+    ],
+    "learningPath": [
+      {
+        "level": "High School",
+        "steps": [
+          "Focus on math (calculus, algebra) and physics",
+          "Take engineering or robotics courses if available",
+          "Participate in science fairs or engineering competitions",
+          "Build projects with mechanical components"
+        ]
+      },
+      {
+        "level": "Undergraduate",
+        "steps": [
+          "Earn a Bachelor's degree in Mechanical Engineering",
+          "Complete internships in engineering firms",
+          "Join engineering societies (ASME)",
+          "Develop CAD and simulation skills",
+          "Complete capstone design projects"
+        ]
+      },
+      {
+        "level": "Early Career",
+        "steps": [
+          "Obtain EIT (Engineer in Training) certification",
+          "Work under licensed Professional Engineers",
+          "Gain experience in your chosen specialization",
+          "Consider pursuing PE (Professional Engineer) license"
+        ]
+      },
+      {
+        "level": "Advanced",
+        "steps": [
+          "Consider Master's degree for specialization",
+          "Obtain Professional Engineer (PE) license",
+          "Pursue leadership roles or management positions",
+          "Stay current with emerging technologies (3D printing, robotics)"
+        ]
+      }
+    ],
+    "topCareers": [
+      {
+        "id": "mechanical-engineer",
+        "title": "Mechanical Engineer",
+        "description": "Designs and builds machines and systems."
+      },
+      {
+        "id": "aerospace-engineer",
+        "title": "Aerospace Engineer",
+        "description": "Designs aircraft, spacecraft, and related systems."
+      },
+      {
+        "id": "robotics-engineer",
+        "title": "Robotics Engineer",
+        "description": "Designs and builds robotic systems."
+      }
+    ],
+    "relatedMajors": [
+      {
+        "id": "aerospace-engineering",
+        "title": "Aerospace Engineering"
+      },
+      {
+        "id": "civil-engineering",
+        "title": "Civil Engineering"
+      },
+      {
+        "id": "electrical-engineering",
+        "title": "Electrical Engineering"
+      }
+    ]
+  },
+  {
+    "id": "data-science",
+    "title": "Data Science",
+    "discipline": "Technology & Analytics",
+    "description": "Interdisciplinary field that uses scientific methods to extract insights from data.",
+    "tagline": "Transforms data into actionable insights.",
+    "overview": "Data Science combines statistics, computer science, and domain expertise to analyze and interpret complex data. Students learn to collect, process, and analyze large datasets to make data-driven decisions.",
+    "requiredCompetencies": [
+      "Strong statistical and mathematical foundation",
+      "Proficiency in programming (Python, R, SQL)",
+      "Machine learning and AI knowledge",
+      "Data visualization skills",
+      "Problem-solving and analytical thinking",
+      "Communication and storytelling with data",
+      "Understanding of databases and data warehousing"
+    ],
+    "learningPath": [
+      {
+        "level": "High School",
+        "steps": [
+          "Focus on mathematics and statistics",
+          "Learn basic programming concepts",
+          "Take advanced math courses (calculus, statistics)",
+          "Participate in data analysis projects"
+        ]
+      },
+      {
+        "level": "Undergraduate",
+        "steps": [
+          "Earn a Bachelor's degree in Data Science, Statistics, or related field",
+          "Complete internships in data-focused roles",
+          "Learn programming languages (Python, R)",
+          "Take courses in machine learning and statistics",
+          "Build projects analyzing real-world datasets"
+        ]
+      },
+      {
+        "level": "Early Career",
+        "steps": [
+          "Start as a data analyst or junior data scientist",
+          "Gain experience with different data tools and platforms",
+          "Develop expertise in specific domains",
+          "Obtain relevant certifications (AWS, Google Cloud, etc.)"
+        ]
+      },
+      {
+        "level": "Advanced",
+        "steps": [
+          "Consider Master's or PhD for advanced roles",
+          "Pursue senior or lead data scientist positions",
+          "Specialize in areas like deep learning or NLP",
+          "Stay current with latest ML/AI research and tools"
+        ]
+      }
+    ],
+    "topCareers": [
+      {
+        "id": "data-scientist",
+        "title": "Data Scientist",
+        "description": "Analyzes complex data to drive business decisions."
+      },
+      {
+        "id": "data-analyst",
+        "title": "Data Analyst",
+        "description": "Interprets data to help organizations make decisions."
+      },
+      {
+        "id": "machine-learning-engineer",
+        "title": "Machine Learning Engineer",
+        "description": "Designs and implements machine learning systems."
+      }
+    ],
+    "relatedMajors": [
+      {
+        "id": "computer-science",
+        "title": "Computer Science"
+      },
+      {
+        "id": "statistics",
+        "title": "Statistics"
+      },
+      {
+        "id": "mathematics",
+        "title": "Mathematics"
+      }
+    ]
+  },
+  {
+    "id": "biomedical-engineering",
+    "title": "Biomedical Engineering",
+    "discipline": "Engineering",
+    "description": "Application of engineering principles to medicine and biology.",
+    "tagline": "Bridges engineering and healthcare.",
+    "overview": "Biomedical Engineering combines engineering principles with medical and biological sciences to design and create equipment, devices, computer systems, and software used in healthcare.",
+    "requiredCompetencies": [
+      "Strong foundation in biology and chemistry",
+      "Engineering design and problem-solving",
+      "Knowledge of medical devices and systems",
+      "Understanding of human anatomy and physiology",
+      "CAD and modeling skills",
+      "Regulatory knowledge (FDA, medical device regulations)",
+      "Interdisciplinary collaboration skills"
+    ],
+    "learningPath": [
+      {
+        "level": "High School",
+        "steps": [
+          "Focus on biology, chemistry, and physics",
+          "Take advanced math courses",
+          "Participate in science fairs or research projects",
+          "Explore healthcare and engineering interests"
+        ]
+      },
+      {
+        "level": "Undergraduate",
+        "steps": [
+          "Earn a Bachelor's degree in Biomedical Engineering",
+          "Complete internships in medical device companies or hospitals",
+          "Take courses in biology, chemistry, and engineering",
+          "Participate in research projects",
+          "Learn medical device design principles"
+        ]
+      },
+      {
+        "level": "Early Career",
+        "steps": [
+          "Start as a biomedical engineer or research assistant",
+          "Gain experience in medical device development",
+          "Learn regulatory requirements",
+          "Obtain relevant certifications"
+        ]
+      },
+      {
+        "level": "Advanced",
+        "steps": [
+          "Consider Master's or PhD for research roles",
+          "Pursue senior engineering or management positions",
+          "Specialize in areas like prosthetics, imaging, or diagnostics",
+          "Stay current with medical technology advances"
+        ]
+      }
+    ],
+    "topCareers": [
+      {
+        "id": "biomedical-engineer",
+        "title": "Biomedical Engineer",
+        "description": "Designs medical equipment and devices."
+      },
+      {
+        "id": "medical-device-engineer",
+        "title": "Medical Device Engineer",
+        "description": "Develops and tests medical devices."
+      },
+      {
+        "id": "clinical-engineer",
+        "title": "Clinical Engineer",
+        "description": "Manages medical equipment in healthcare settings."
+      }
+    ],
+    "relatedMajors": [
+      {
+        "id": "mechanical-engineering",
+        "title": "Mechanical Engineering"
+      },
+      {
+        "id": "electrical-engineering",
+        "title": "Electrical Engineering"
+      },
+      {
+        "id": "biology",
+        "title": "Biology"
+      }
+    ]
+  },
+  {
+    "id": "nursing",
+    "title": "Nursing",
+    "discipline": "Health & Nursing",
+    "description": "Healthcare profession focused on patient care and health promotion.",
+    "tagline": "Delivers comprehensive patient care.",
+    "overview": "Nursing is a healthcare profession that focuses on caring for individuals, families, and communities to help them attain, maintain, or recover optimal health and quality of life.",
+    "requiredCompetencies": [
+      "Strong communication and interpersonal skills",
+      "Empathy and compassion",
+      "Critical thinking and problem-solving",
+      "Knowledge of human anatomy and physiology",
+      "Clinical skills and patient care",
+      "Attention to detail and accuracy",
+      "Ability to work under pressure"
+    ],
+    "learningPath": [
+      {
+        "level": "High School",
+        "steps": [
+          "Focus on biology, chemistry, and health sciences",
+          "Take psychology and human development courses",
+          "Volunteer in healthcare settings",
+          "Develop strong communication skills"
+        ]
+      },
+      {
+        "level": "Undergraduate",
+        "steps": [
+          "Earn a Bachelor's degree in Nursing (BSN)",
+          "Complete clinical rotations",
+          "Pass NCLEX-RN licensing exam",
+          "Gain experience in various healthcare settings",
+          "Join nursing organizations"
+        ]
+      },
+      {
+        "level": "Early Career",
+        "steps": [
+          "Start as a registered nurse (RN)",
+          "Gain experience in different specialties",
+          "Obtain certifications in specialty areas",
+          "Consider pursuing advanced practice roles"
+        ]
+      },
+      {
+        "level": "Advanced",
+        "steps": [
+          "Consider Master's degree for Nurse Practitioner or other advanced roles",
+          "Pursue specialty certifications",
+          "Take on leadership or management roles",
+          "Stay current with healthcare best practices"
+        ]
+      }
+    ],
+    "topCareers": [
+      {
+        "id": "nurse-practitioner",
+        "title": "Nurse Practitioner",
+        "description": "Provides advanced nursing care and patient diagnosis."
+      },
+      {
+        "id": "registered-nurse",
+        "title": "Registered Nurse",
+        "description": "Provides direct patient care and coordinates treatment."
+      },
+      {
+        "id": "nurse-manager",
+        "title": "Nurse Manager",
+        "description": "Oversees nursing staff and patient care operations."
+      }
+    ],
+    "relatedMajors": [
+      {
+        "id": "health-sciences",
+        "title": "Health Sciences"
+      },
+      {
+        "id": "public-health",
+        "title": "Public Health"
+      },
+      {
+        "id": "biology",
+        "title": "Biology"
+      }
+    ]
+  },
+  {
+    "id": "environmental-science",
+    "title": "Environmental Science",
+    "discipline": "Science",
+    "description": "Interdisciplinary study of environmental systems and solutions.",
+    "tagline": "Safeguards our planet's future.",
+    "overview": "Environmental Science is an interdisciplinary field that integrates physical, biological, and information sciences to study the environment and solve environmental problems.",
+    "requiredCompetencies": [
+      "Strong scientific and analytical skills",
+      "Knowledge of environmental regulations and policies",
+      "Field research and data collection abilities",
+      "Understanding of chemistry, biology, and earth sciences",
+      "Report writing and communication skills",
+      "Problem-solving and critical thinking",
+      "Proficiency in data analysis and GIS software"
+    ],
+    "learningPath": [
+      {
+        "level": "High School",
+        "steps": [
+          "Focus on science courses (biology, chemistry, earth science)",
+          "Take environmental science courses if available",
+          "Participate in environmental clubs or activities",
+          "Volunteer for environmental conservation projects"
+        ]
+      },
+      {
+        "level": "Undergraduate",
+        "steps": [
+          "Earn a Bachelor's degree in Environmental Science or related field",
+          "Complete internships with environmental organizations",
+          "Take courses in ecology, chemistry, and geology",
+          "Gain field research experience",
+          "Learn GIS and data analysis tools"
+        ]
+      },
+      {
+        "level": "Early Career",
+        "steps": [
+          "Start as an environmental technician or assistant",
+          "Gain experience in specific environmental areas",
+          "Obtain relevant certifications if needed",
+          "Develop expertise in environmental regulations"
+        ]
+      },
+      {
+        "level": "Advanced",
+        "steps": [
+          "Consider Master's degree for advanced roles",
+          "Pursue senior scientist or consultant positions",
+          "Obtain professional certifications",
+          "Stay current with environmental research and regulations"
+        ]
+      }
+    ],
+    "topCareers": [
+      {
+        "id": "environmental-scientist",
+        "title": "Environmental Scientist",
+        "description": "Studies and protects the environment."
+      },
+      {
+        "id": "environmental-consultant",
+        "title": "Environmental Consultant",
+        "description": "Advises organizations on environmental compliance."
+      },
+      {
+        "id": "conservation-scientist",
+        "title": "Conservation Scientist",
+        "description": "Manages and protects natural resources."
+      }
+    ],
+    "relatedMajors": [
+      {
+        "id": "biology",
+        "title": "Biology"
+      },
+      {
+        "id": "chemistry",
+        "title": "Chemistry"
+      },
+      {
+        "id": "geology",
+        "title": "Geology"
+      }
+    ]
+  },
+  {
+    "id": "finance",
+    "title": "Finance",
+    "discipline": "Economics & Finance",
+    "description": "Study of money management, investments, and financial planning.",
+    "tagline": "Guides financial decision-making.",
+    "overview": "Finance is the study of how individuals, businesses, and organizations manage money, make investments, and plan for the future. It encompasses areas like corporate finance, investments, banking, and financial planning.",
+    "requiredCompetencies": [
+      "Strong analytical and quantitative skills",
+      "Understanding of financial markets and instruments",
+      "Proficiency in financial analysis and modeling",
+      "Knowledge of accounting principles",
+      "Risk assessment and management",
+      "Communication and presentation skills",
+      "Attention to detail and accuracy"
+    ],
+    "learningPath": [
+      {
+        "level": "High School",
+        "steps": [
+          "Focus on mathematics and economics",
+          "Take business or accounting courses if available",
+          "Learn about financial markets and investing",
+          "Develop analytical thinking skills"
+        ]
+      },
+      {
+        "level": "Undergraduate",
+        "steps": [
+          "Earn a Bachelor's degree in Finance, Economics, or Business",
+          "Complete internships in finance roles",
+          "Take courses in financial analysis, investments, and accounting",
+          "Learn financial modeling and analysis tools",
+          "Join finance clubs or organizations"
+        ]
+      },
+      {
+        "level": "Early Career",
+        "steps": [
+          "Start as a financial analyst or associate",
+          "Gain experience in specific finance areas",
+          "Obtain relevant certifications (CFA, CPA, etc.)",
+          "Develop expertise in financial analysis"
+        ]
+      },
+      {
+        "level": "Advanced",
+        "steps": [
+          "Pursue CFA (Chartered Financial Analyst) designation",
+          "Consider MBA for senior roles",
+          "Pursue senior analyst or portfolio manager positions",
+          "Stay current with financial regulations and market trends"
+        ]
+      }
+    ],
+    "topCareers": [
+      {
+        "id": "financial-analyst",
+        "title": "Financial Analyst",
+        "description": "Analyzes financial data and market trends."
+      },
+      {
+        "id": "investment-banker",
+        "title": "Investment Banker",
+        "description": "Helps companies raise capital and execute transactions."
+      },
+      {
+        "id": "financial-planner",
+        "title": "Financial Planner",
+        "description": "Helps individuals plan for financial goals."
+      }
+    ],
+    "relatedMajors": [
+      {
+        "id": "economics",
+        "title": "Economics"
+      },
+      {
+        "id": "accounting",
+        "title": "Accounting"
+      },
+      {
+        "id": "business-administration",
+        "title": "Business Administration"
+      }
+    ]
+  },
+  {
+    "id": "project-management",
+    "title": "Project Management",
+    "discipline": "Project Management",
+    "description": "Planning, organizing, and managing resources to achieve specific goals.",
+    "tagline": "Leads teams to successful project delivery.",
+    "overview": "Project Management involves planning, executing, and closing projects while managing resources, timelines, and stakeholders. It's applicable across all industries and requires strong organizational and leadership skills.",
+    "requiredCompetencies": [
+      "Strong organizational and planning skills",
+      "Leadership and team management",
+      "Communication and negotiation",
+      "Risk management and problem-solving",
+      "Budget and resource management",
+      "Understanding of project management methodologies (Agile, Scrum, Waterfall)",
+      "Time management and prioritization"
+    ],
+    "learningPath": [
+      {
+        "level": "High School",
+        "steps": [
+          "Develop leadership and organizational skills",
+          "Take business or management courses if available",
+          "Participate in team projects and activities",
+          "Practice time management and planning"
+        ]
+      },
+      {
+        "level": "Undergraduate",
+        "steps": [
+          "Earn a Bachelor's degree in Business, Management, or related field",
+          "Complete internships in project management roles",
+          "Learn project management methodologies",
+          "Take courses in leadership and organizational behavior",
+          "Obtain PMP or CAPM certification preparation"
+        ]
+      },
+      {
+        "level": "Early Career",
+        "steps": [
+          "Start as a project coordinator or assistant",
+          "Gain experience managing small projects",
+          "Obtain PMP (Project Management Professional) certification",
+          "Develop expertise in specific industries or methodologies"
+        ]
+      },
+      {
+        "level": "Advanced",
+        "steps": [
+          "Pursue senior project manager or program manager roles",
+          "Consider MBA for executive positions",
+          "Mentor junior project managers",
+          "Stay current with project management best practices and tools"
+        ]
+      }
+    ],
+    "topCareers": [
+      {
+        "id": "project-manager",
+        "title": "Project Manager",
+        "description": "Oversees projects from conception to completion."
+      },
+      {
+        "id": "program-manager",
+        "title": "Program Manager",
+        "description": "Manages multiple related projects."
+      },
+      {
+        "id": "scrum-master",
+        "title": "Scrum Master",
+        "description": "Facilitates Agile development processes."
+      }
+    ],
+    "relatedMajors": [
+      {
+        "id": "business-administration",
+        "title": "Business Administration"
+      },
+      {
+        "id": "operations-management",
+        "title": "Operations Management"
+      },
+      {
+        "id": "leadership-management",
+        "title": "Leadership & Management"
+      }
+    ]
+  }
+]
+

@@ -1,0 +1,434 @@
+[
+  {
+    "id": "software-engineer",
+    "title": "Software Engineer",
+    "field": "Technology & Analytics",
+    "tagline": "Builds innovative software solutions.",
+    "whatTheyDo": "Software engineers design, develop, and maintain software applications and systems. They write code, test software, and collaborate with teams to create solutions that meet user needs. Software engineers work across various industries, from web development to mobile apps, enterprise software, and embedded systems.\n\nSoftware engineers typically do the following: analyze user needs and software requirements, design software solutions and system architecture, write and test code in various programming languages, debug and fix software issues, collaborate with cross-functional teams, and maintain and update existing software systems.",
+    "requiredSkills": [
+      "Proficiency in programming languages (Python, Java, JavaScript, etc.)",
+      "Understanding of software development methodologies (Agile, Scrum)",
+      "Knowledge of data structures and algorithms",
+      "Version control systems (Git)",
+      "Problem-solving and debugging skills",
+      "Collaboration and communication",
+      "Understanding of software architecture and design patterns"
+    ],
+    "commonMajors": [
+      {
+        "id": "computer-science",
+        "title": "Computer Science"
+      },
+      {
+        "id": "software-engineering",
+        "title": "Software Engineering"
+      },
+      {
+        "id": "information-technology",
+        "title": "Information Technology"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Building Software at Scale",
+        "name": "Alex Kim",
+        "role": "Senior Software Engineer",
+        "company": "Google",
+        "videoId": "dQw4w9WgXcQ"
+      },
+      {
+        "title": "My Journey into Tech",
+        "name": "Priya Patel",
+        "role": "Software Engineer",
+        "company": "Microsoft",
+        "videoId": "dQw4w9WgXcQ"
+      },
+      {
+        "title": "Full-Stack Development Career Path",
+        "name": "Jordan Taylor",
+        "role": "Lead Software Engineer",
+        "company": "Amazon",
+        "videoId": "dQw4w9WgXcQ"
+      }
+    ],
+    "relatedCareers": [
+      {
+        "id": "data-scientist",
+        "title": "Data Scientist",
+        "description": "Analyzes complex data to drive business decisions."
+      },
+      {
+        "id": "web-developer",
+        "title": "Web Developer",
+        "description": "Builds and maintains websites and web applications."
+      }
+    ]
+  },
+  {
+    "id": "mechanical-engineer",
+    "title": "Mechanical Engineer",
+    "field": "Engineering",
+    "tagline": "Designs and builds machines and systems.",
+    "whatTheyDo": "Mechanical engineers design, develop, build, and test mechanical and thermal sensors and devices, including tools, engines, and machines. They work on power-producing machines such as electric generators, internal combustion engines, and steam and gas turbines, as well as power-using machines such as refrigeration and air-conditioning systems.\n\nMechanical engineers typically do the following: analyze problems to see how mechanical and thermal devices might help solve a particular problem, design or redesign mechanical and thermal devices or subsystems, using analysis and computer-aided design, develop and test prototypes of devices they design, analyze the test results and change the design or system as needed, and oversee the manufacturing process for the device.",
+    "requiredSkills": [
+      "Problem-solving and analytical thinking",
+      "Proficiency in CAD software (SolidWorks, AutoCAD)",
+      "Understanding of thermodynamics and fluid mechanics",
+      "Knowledge of materials science",
+      "Project management skills",
+      "Strong mathematical foundation",
+      "Communication and teamwork"
+    ],
+    "commonMajors": [
+      {
+        "id": "mechanical-engineering",
+        "title": "Mechanical Engineering"
+      },
+      {
+        "id": "aerospace-engineering",
+        "title": "Aerospace Engineering"
+      },
+      {
+        "id": "industrial-engineering",
+        "title": "Industrial Engineering"
+      }
+    ],
+    "videos": [
+      {
+        "title": "A Day in the Life of a Mechanical Engineer",
+        "name": "Sarah Martinez",
+        "role": "Senior Mechanical Engineer",
+        "company": "Tesla",
+        "videoId": "dQw4w9WgXcQ"
+      },
+      {
+        "title": "From Student to Professional Engineer",
+        "name": "Michael Chen",
+        "role": "Mechanical Engineer",
+        "company": "Boeing",
+        "videoId": "dQw4w9WgXcQ"
+      },
+      {
+        "title": "Designing the Future: Mechanical Engineering",
+        "name": "Emily Rodriguez",
+        "role": "Lead Mechanical Engineer",
+        "company": "Apple",
+        "videoId": "dQw4w9WgXcQ"
+      }
+    ],
+    "relatedCareers": [
+      {
+        "id": "aerospace-engineer",
+        "title": "Aerospace Engineer",
+        "description": "Designs aircraft, spacecraft, and related systems."
+      },
+      {
+        "id": "industrial-engineer",
+        "title": "Industrial Engineer",
+        "description": "Optimizes complex systems and processes."
+      }
+    ]
+  },
+  {
+    "id": "data-scientist",
+    "title": "Data Scientist",
+    "field": "Technology & Analytics",
+    "tagline": "Transforms data into actionable insights.",
+    "whatTheyDo": "Data scientists analyze complex data sets to extract meaningful insights and help organizations make data-driven decisions. They use statistical methods, machine learning algorithms, and programming skills to process and interpret large amounts of data.\n\nData scientists typically do the following: collect and clean large datasets, perform statistical analysis and data mining, build predictive models using machine learning, create data visualizations and reports, communicate findings to stakeholders, and work with cross-functional teams to implement data-driven solutions.",
+    "requiredSkills": [
+      "Strong statistical and mathematical foundation",
+      "Proficiency in programming (Python, R, SQL)",
+      "Machine learning and AI knowledge",
+      "Data visualization skills",
+      "Problem-solving and analytical thinking",
+      "Communication and storytelling with data",
+      "Understanding of databases and data warehousing"
+    ],
+    "commonMajors": [
+      {
+        "id": "data-science",
+        "title": "Data Science"
+      },
+      {
+        "id": "computer-science",
+        "title": "Computer Science"
+      },
+      {
+        "id": "statistics",
+        "title": "Statistics"
+      }
+    ],
+    "videos": [],
+    "relatedCareers": [
+      {
+        "id": "software-engineer",
+        "title": "Software Engineer",
+        "description": "Develops software applications and systems."
+      },
+      {
+        "id": "financial-analyst",
+        "title": "Financial Analyst",
+        "description": "Analyzes financial data and market trends."
+      }
+    ]
+  },
+  {
+    "id": "biomedical-engineer",
+    "title": "Biomedical Engineer",
+    "field": "Engineering",
+    "tagline": "Bridges engineering and healthcare.",
+    "whatTheyDo": "Biomedical engineers combine engineering principles with medical and biological sciences to design and create equipment, devices, computer systems, and software used in healthcare. They work on a wide range of medical technologies, from artificial organs to imaging systems and drug delivery systems.\n\nBiomedical engineers typically do the following: design medical devices and equipment, conduct research to develop new medical technologies, test and evaluate medical equipment, collaborate with healthcare professionals, ensure compliance with medical regulations, and maintain and repair medical equipment.",
+    "requiredSkills": [
+      "Strong foundation in biology and chemistry",
+      "Engineering design and problem-solving",
+      "Knowledge of medical devices and systems",
+      "Understanding of human anatomy and physiology",
+      "CAD and modeling skills",
+      "Regulatory knowledge (FDA, medical device regulations)",
+      "Interdisciplinary collaboration skills"
+    ],
+    "commonMajors": [
+      {
+        "id": "biomedical-engineering",
+        "title": "Biomedical Engineering"
+      },
+      {
+        "id": "mechanical-engineering",
+        "title": "Mechanical Engineering"
+      },
+      {
+        "id": "electrical-engineering",
+        "title": "Electrical Engineering"
+      }
+    ],
+    "videos": [],
+    "relatedCareers": [
+      {
+        "id": "medical-device-engineer",
+        "title": "Medical Device Engineer",
+        "description": "Develops and tests medical devices."
+      },
+      {
+        "id": "clinical-engineer",
+        "title": "Clinical Engineer",
+        "description": "Manages medical equipment in healthcare settings."
+      }
+    ]
+  },
+  {
+    "id": "nurse-practitioner",
+    "title": "Nurse Practitioner",
+    "field": "Health & Nursing",
+    "tagline": "Delivers comprehensive patient care.",
+    "whatTheyDo": "Nurse practitioners (NPs) are advanced practice registered nurses who provide primary and specialty healthcare. They can diagnose and treat medical conditions, prescribe medications, and provide patient education. NPs work in various settings including hospitals, clinics, private practices, and community health centers.\n\nNurse practitioners typically do the following: assess patients and diagnose health conditions, develop and implement treatment plans, prescribe medications and therapies, order and interpret diagnostic tests, provide patient education and counseling, collaborate with physicians and other healthcare professionals, and maintain patient records.",
+    "requiredSkills": [
+      "Strong communication and interpersonal skills",
+      "Empathy and compassion",
+      "Critical thinking and problem-solving",
+      "Knowledge of human anatomy and physiology",
+      "Clinical skills and patient care",
+      "Attention to detail and accuracy",
+      "Ability to work under pressure"
+    ],
+    "commonMajors": [
+      {
+        "id": "nursing",
+        "title": "Nursing"
+      },
+      {
+        "id": "health-sciences",
+        "title": "Health Sciences"
+      },
+      {
+        "id": "biology",
+        "title": "Biology"
+      }
+    ],
+    "videos": [],
+    "relatedCareers": [
+      {
+        "id": "registered-nurse",
+        "title": "Registered Nurse",
+        "description": "Provides direct patient care and coordinates treatment."
+      },
+      {
+        "id": "physician-assistant",
+        "title": "Physician Assistant",
+        "description": "Provides medical care under physician supervision."
+      }
+    ]
+  },
+  {
+    "id": "environmental-scientist",
+    "title": "Environmental Scientist",
+    "field": "Science",
+    "tagline": "Safeguards our planet's future.",
+    "whatTheyDo": "Environmental scientists study the environment and develop solutions to environmental problems. They conduct research, collect and analyze data, and develop plans to prevent or fix environmental issues. They work in various settings including government agencies, consulting firms, and research institutions.\n\nEnvironmental scientists typically do the following: collect and analyze environmental samples, conduct field investigations and surveys, develop plans to prevent or fix environmental problems, prepare technical reports and presentations, ensure compliance with environmental regulations, collaborate with government agencies and organizations, and monitor environmental quality and pollution levels.",
+    "requiredSkills": [
+      "Strong scientific and analytical skills",
+      "Knowledge of environmental regulations and policies",
+      "Field research and data collection abilities",
+      "Understanding of chemistry, biology, and earth sciences",
+      "Report writing and communication skills",
+      "Problem-solving and critical thinking",
+      "Proficiency in data analysis and GIS software"
+    ],
+    "commonMajors": [
+      {
+        "id": "environmental-science",
+        "title": "Environmental Science"
+      },
+      {
+        "id": "biology",
+        "title": "Biology"
+      },
+      {
+        "id": "chemistry",
+        "title": "Chemistry"
+      }
+    ],
+    "videos": [],
+    "relatedCareers": [
+      {
+        "id": "environmental-consultant",
+        "title": "Environmental Consultant",
+        "description": "Advises organizations on environmental compliance."
+      },
+      {
+        "id": "conservation-scientist",
+        "title": "Conservation Scientist",
+        "description": "Manages and protects natural resources."
+      }
+    ]
+  },
+  {
+    "id": "financial-analyst",
+    "title": "Financial Analyst",
+    "field": "Economics & Finance",
+    "tagline": "Guides financial decision-making.",
+    "whatTheyDo": "Financial analysts evaluate investment opportunities, analyze financial data, and provide recommendations to help individuals and organizations make financial decisions. They work in various settings including banks, investment firms, insurance companies, and corporate finance departments.\n\nFinancial analysts typically do the following: analyze financial statements and market trends, evaluate investment opportunities, create financial models and forecasts, prepare reports and presentations, provide recommendations to clients or management, monitor economic and market conditions, and assess the financial health of companies or investments.",
+    "requiredSkills": [
+      "Strong analytical and quantitative skills",
+      "Understanding of financial markets and instruments",
+      "Proficiency in financial analysis and modeling",
+      "Knowledge of accounting principles",
+      "Risk assessment and management",
+      "Communication and presentation skills",
+      "Attention to detail and accuracy"
+    ],
+    "commonMajors": [
+      {
+        "id": "finance",
+        "title": "Finance"
+      },
+      {
+        "id": "economics",
+        "title": "Economics"
+      },
+      {
+        "id": "accounting",
+        "title": "Accounting"
+      }
+    ],
+    "videos": [],
+    "relatedCareers": [
+      {
+        "id": "investment-banker",
+        "title": "Investment Banker",
+        "description": "Helps companies raise capital and execute transactions."
+      },
+      {
+        "id": "financial-planner",
+        "title": "Financial Planner",
+        "description": "Helps individuals plan for financial goals."
+      }
+    ]
+  },
+  {
+    "id": "project-manager",
+    "title": "Project Manager",
+    "field": "Project Management",
+    "tagline": "Leads teams to successful project delivery.",
+    "whatTheyDo": "Project managers plan, execute, and close projects while managing resources, timelines, and stakeholders. They work across all industries to ensure projects are completed on time, within budget, and meet quality standards.\n\nProject managers typically do the following: define project scope and objectives, develop project plans and timelines, allocate resources and manage budgets, coordinate team members and stakeholders, monitor project progress and performance, identify and manage risks, and ensure project deliverables meet quality standards.",
+    "requiredSkills": [
+      "Strong organizational and planning skills",
+      "Leadership and team management",
+      "Communication and negotiation",
+      "Risk management and problem-solving",
+      "Budget and resource management",
+      "Understanding of project management methodologies (Agile, Scrum, Waterfall)",
+      "Time management and prioritization"
+    ],
+    "commonMajors": [
+      {
+        "id": "project-management",
+        "title": "Project Management"
+      },
+      {
+        "id": "business-administration",
+        "title": "Business Administration"
+      },
+      {
+        "id": "operations-management",
+        "title": "Operations Management"
+      }
+    ],
+    "videos": [],
+    "relatedCareers": [
+      {
+        "id": "program-manager",
+        "title": "Program Manager",
+        "description": "Manages multiple related projects."
+      },
+      {
+        "id": "scrum-master",
+        "title": "Scrum Master",
+        "description": "Facilitates Agile development processes."
+      }
+    ]
+  },
+  {
+    "id": "marketing-manager",
+    "title": "Marketing Manager",
+    "field": "Marketing & Communication",
+    "tagline": "Connects brands with audiences.",
+    "whatTheyDo": "Marketing managers plan, develop, and execute marketing strategies to promote products, services, or brands. They work to understand customer needs, develop marketing campaigns, and measure the effectiveness of marketing efforts. Marketing managers work across various industries and may specialize in digital marketing, brand management, or product marketing.\n\nMarketing managers typically do the following: develop marketing strategies and campaigns, conduct market research and analyze consumer behavior, manage marketing budgets and resources, coordinate with creative teams and agencies, measure and analyze marketing performance, develop brand positioning and messaging, and oversee marketing team members.",
+    "requiredSkills": [
+      "Strong communication and creative skills",
+      "Understanding of marketing principles and strategies",
+      "Digital marketing knowledge (SEO, social media, email)",
+      "Data analysis and marketing analytics",
+      "Project management and organization",
+      "Understanding of consumer behavior",
+      "Budget management and ROI analysis"
+    ],
+    "commonMajors": [
+      {
+        "id": "marketing",
+        "title": "Marketing"
+      },
+      {
+        "id": "business-administration",
+        "title": "Business Administration"
+      },
+      {
+        "id": "communications",
+        "title": "Communications"
+      }
+    ],
+    "videos": [],
+    "relatedCareers": [
+      {
+        "id": "brand-manager",
+        "title": "Brand Manager",
+        "description": "Manages brand identity and positioning."
+      },
+      {
+        "id": "digital-marketing-specialist",
+        "title": "Digital Marketing Specialist",
+        "description": "Executes digital marketing campaigns."
+      }
+    ]
+  }
+]
+
