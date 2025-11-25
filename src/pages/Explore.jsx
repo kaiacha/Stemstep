@@ -96,7 +96,7 @@ const Explore = () => {
   };
 
   return (
-    <div className="bg-background min-h-screen py-8 md:py-12">
+    <div className="bg-background min-h-screen pt-20 pb-8 md:pb-12">
       <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
         {/* Header */}
         <div className="mb-8">

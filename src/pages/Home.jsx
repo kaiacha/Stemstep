@@ -72,79 +72,79 @@ const RealVoicesSection = () => {
 };
 
 const Home = () => {
-  const features = [
-    {
-      icon: Compass,
+    const features = [
+        {
+            icon: Compass,
       title: "Explore Majors",
       description:
         "Discover diverse STEM fields and find the perfect match for your interests and skills.",
       link: "/explore",
       linkText: "Start Exploring",
-    },
-    {
-      icon: Map,
+        },
+        {
+            icon: Map,
       title: "Visual Roadmaps",
       description:
         "See clear roadmaps from high school to your dream major, including education and training.",
       link: "/explore",
       linkText: "Explore Majors",
-    },
-    {
-      icon: FlaskConical,
+        },
+        {
+            icon: FlaskConical,
       title: "Interactive Activities",
       description:
         "Try hands-on simulations and mini-modules to experience what different jobs are really like.",
       link: "/activities",
       linkText: "Try Activities",
-    },
-    {
-      icon: BrainCircuit,
+        },
+        {
+            icon: BrainCircuit,
       title: "AI Guidance",
       description:
         "Get personalized recommendations and answers to your questions about STEM majors.",
       link: "/explore",
       linkText: "Get Advice",
-    },
-  ];
+        },
+    ];
 
-  return (
-    <div className="flex flex-col relative">
-      <InteractiveBackground />
-      <div className="relative z-10">
-        <Hero />
+    return (
+        <div className="flex flex-col relative">
+            <InteractiveBackground />
+            <div className="relative z-10">
+                <Hero />
 
         {/* Feature Cards Section */}
-        <section className="py-24 bg-surface/50 backdrop-blur-sm">
+                <section className="py-24 bg-surface/50 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
-            <div className="text-center max-w-3xl mx-auto mb-16">
+                        <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl font-bold text-text mb-4">
                 Why Choose STEM?
               </h2>
-              <p className="text-lg text-text-muted">
+                            <p className="text-lg text-text-muted">
                 Science, Technology, Engineering, and Math are shaping the
                 future. These majors offer high growth, creativity, and the
                 chance to solve real-world problems.
-              </p>
-            </div>
+                            </p>
+                        </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-2 overflow-visible items-stretch">
-              {features.map((feature, index) => (
+                            {features.map((feature, index) => (
                 <div key={index} className="overflow-visible h-full">
                   <FeatureCard {...feature} />
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
+                            ))}
+                        </div>
+                    </div>
+                </section>
 
         {/* Real Voices of the Field Section */}
         <RealVoicesSection />
 
         {/* School Ranking Section */}
         <SchoolRanking />
-      </div>
-    </div>
-  );
+            </div>
+        </div>
+    );
 };
 
 export default Home;
