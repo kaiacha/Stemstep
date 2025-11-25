@@ -1,24 +1,42 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { Search } from "lucide-react";
+import { Search, ChevronDown, ChevronUp } from "lucide-react";
 import CareerCard from "../components/CareerCard";
 import majorsData from "../data/majors.json";
 import careersData from "../data/careers.json";
 
 const Explore = () => {
   const [searchParams] = useSearchParams();
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(() => {
+    return searchParams.get("query") || "";
+  });
   const [selectedArea, setSelectedArea] = useState(null);
   const [mode, setMode] = useState("majors"); // "majors" or "careers"
+  const [showAllAreas, setShowAllAreas] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
+  const prevQueryRef = useRef(searchParams.get("query"));
 
-  // Initialize search term from URL query parameter
+  // Update search term when URL query parameter changes
   useEffect(() => {
     const query = searchParams.get("query");
-    if (query) {
-      setSearchTerm(query);
+    if (query !== prevQueryRef.current) {
+      prevQueryRef.current = query;
+      // Defer state update to avoid synchronous setState
+      const timeoutId = setTimeout(() => {
+        setSearchTerm(query || "");
+      }, 0);
+      return () => clearTimeout(timeoutId);
     }
   }, [searchParams]);
+
+  // Detect mobile viewport
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const areasOfInterest = [
     "Business",
@@ -82,7 +100,7 @@ const Explore = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-text mb-20 text-center">
+          <h1 className="text-[2.0rem] md:text-4xl font-bold text-text mb-10 md:mb-20 text-center">
             Explore STEM
           </h1>
         </div>
@@ -107,10 +125,10 @@ const Explore = () => {
             </div>
 
             {/* Mode Toggle - Right */}
-            <div className="inline-flex bg-white rounded-full p-1 border border-gray-200 shadow-sm flex-shrink-0">
+            <div className="inline-flex bg-white rounded-full p-0.5 md:p-1 border border-gray-200 shadow-sm flex-shrink-0">
               <button
                 onClick={() => setMode("majors")}
-                className={`px-6 py-2 text-sm font-medium transition-all duration-200 ${
+                className={`px-3 py-1.5 md:px-6 md:py-2 text-xs md:text-sm font-medium transition-all duration-200 ${
                   mode === "majors"
                     ? "shadow-sm"
                     : "text-text-muted hover:text-text"
@@ -126,7 +144,7 @@ const Explore = () => {
               </button>
               <button
                 onClick={() => setMode("careers")}
-                className={`px-6 py-2 text-sm font-medium transition-all duration-200 ${
+                className={`px-3 py-1.5 md:px-6 md:py-2 text-xs md:text-sm font-medium transition-all duration-200 ${
                   mode === "careers"
                     ? "shadow-sm"
                     : "text-text-muted hover:text-text"
@@ -146,15 +164,18 @@ const Explore = () => {
 
         {/* Areas of Interest Section */}
         <div className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-text mb-6 text-center md:text-left">
+          <h2 className="text-2xl md:text-3xl font-bold text-text mb-2 md:mb-6 text-center md:text-left">
             Areas of Interest
           </h2>
-          <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-            {areasOfInterest.map((area) => (
+          <div className="flex flex-wrap gap-2 md:gap-3 justify-center md:justify-start">
+            {(isMobile && !showAllAreas
+              ? areasOfInterest.slice(0, 4)
+              : areasOfInterest
+            ).map((area) => (
               <button
                 key={area}
                 onClick={() => handleAreaClick(area)}
-                className={`px-4 py-2.5 md:px-6 md:py-3 rounded-lg text-sm md:text-base font-medium transition-all duration-200 transform hover:scale-105 hover:shadow-md ${
+                className={`px-3 py-1.5 md:px-4 md:py-2.5 lg:px-6 lg:py-3 rounded-lg text-xs md:text-sm lg:text-base font-medium transition-all duration-200 transform hover:scale-105 hover:shadow-md ${
                   selectedArea === area
                     ? "shadow-md scale-105"
                     : "bg-white text-text border border-gray-200 hover:border-primary hover:text-primary hover:bg-primary/5"
@@ -162,13 +183,33 @@ const Explore = () => {
                 style={
                   selectedArea === area
                     ? { backgroundColor: "#646cff", color: "white" }
-                    : {}
+                    : { backgroundColor: "white" }
                 }
               >
                 {area}
               </button>
             ))}
           </div>
+          {/* More/Less Button - Only on Mobile */}
+          {isMobile && areasOfInterest.length > 4 && (
+            <div className="flex justify-center md:hidden">
+              <button
+                onClick={() => setShowAllAreas(!showAllAreas)}
+                className="flex items-center gap-2 font-medium text-primary border-2 border-primary hover:bg-primary/5 transition-all duration-200"
+                style={{ backgroundColor: "transparent" }}
+              >
+                {showAllAreas ? (
+                  <>
+                    Less <ChevronUp className="w-4 h-4" />
+                  </>
+                ) : (
+                  <>
+                    More <ChevronDown className="w-4 h-4" />
+                  </>
+                )}
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Results */}

@@ -67,7 +67,7 @@ const Activities = () => {
 
           <button
             onClick={() => navigate("/explore/self-assessment")}
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent to-orange-500 text-white rounded-xl font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent to-[#646cff] text-white rounded-xl font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
           >
             <Sparkles className="w-5 h-5 mr-2" />
             Not sure where to start? Take the Self-Assessment!

@@ -72,18 +72,19 @@ const SearchBar = () => {
       </form>
 
       {/* Popular Chips */}
-      <div className="flex flex-wrap justify-center gap-3">
+      <div className="flex flex-wrap justify-center gap-2 md:gap-3">
         {popularChips.map((chip) => (
           <button
             key={chip}
             onClick={() => handleChipClick(chip)}
             onKeyDown={(e) => handleKeyDown(e, chip)}
             aria-pressed={selectedChip === chip}
-            className={`px-4 py-2 md:px-4 md:py-2 rounded-full text-sm md:text-base font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
+            className={`px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm lg:text-base font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
               selectedChip === chip
                 ? "bg-primary text-white shadow-md scale-105"
                 : "bg-white text-text border border-gray-200 hover:border-primary hover:text-primary hover:bg-primary/5 hover:shadow-sm"
             }`}
+            style={selectedChip === chip ? {} : { backgroundColor: "white" }}
           >
             {chip}
           </button>

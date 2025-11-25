@@ -1011,12 +1011,12 @@ const SchoolRanking = () => {
         </div>
 
         {/* Major Toggle */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-12">
           {majors.map((major) => (
             <button
               key={major}
               onClick={() => setSelectedMajor(major)}
-              className={`px-6 py-3 rounded-full text-sm md:text-base font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
+              className={`px-3 py-1.5 md:px-6 md:py-3 rounded-full text-xs md:text-sm lg:text-base font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
                 selectedMajor === major
                   ? "bg-primary/10 border-2 border-primary shadow-md scale-105"
                   : "bg-white text-text border-2 border-gray-200 hover:border-primary hover:text-primary hover:bg-primary/5 hover:shadow-sm"

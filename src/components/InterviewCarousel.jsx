@@ -97,16 +97,34 @@ const InterviewCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    }
+    return false;
+  });
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth < 768;
+    }
+    return false;
+  });
 
-  // Check for reduced motion
+  // Check for reduced motion and mobile
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setPrefersReducedMotion(mediaQuery.matches);
     const handler = (e) => setPrefersReducedMotion(e.matches);
     mediaQuery.addEventListener("change", handler);
-    return () => mediaQuery.removeEventListener("change", handler);
+
+    // Check for mobile
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", checkMobile);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handler);
+      window.removeEventListener("resize", checkMobile);
+    };
   }, []);
 
   // Handle scroll and detect center card
@@ -276,8 +294,8 @@ const InterviewCarousel = () => {
         style={{
           scrollSnapType: "x mandatory",
           scrollBehavior: prefersReducedMotion ? "auto" : "smooth",
-          paddingLeft: "clamp(3rem, 10vw, 6rem)",
-          paddingRight: "clamp(3rem, 10vw, 6rem)",
+          paddingLeft: isMobile ? "1rem" : "clamp(3rem, 10vw, 6rem)",
+          paddingRight: isMobile ? "1rem" : "clamp(3rem, 10vw, 6rem)",
           WebkitOverflowScrolling: "touch",
         }}
         role="region"
@@ -286,7 +304,10 @@ const InterviewCarousel = () => {
         {/* Left Placeholder */}
         <div
           className="flex-shrink-0"
-          style={{ width: "320px", minWidth: "320px" }}
+          style={{
+            width: isMobile ? "160px" : "320px",
+            minWidth: isMobile ? "160px" : "320px",
+          }}
           aria-hidden="true"
         />
 
@@ -323,13 +344,29 @@ const InterviewCarousel = () => {
             }
           }
 
+          // Mobile responsive widths (50% of desktop)
+          const cardWidth = isMobile
+            ? isCenter
+              ? "200px"
+              : "160px"
+            : isCenter
+            ? "400px"
+            : "320px";
+          const cardMinWidth = isMobile
+            ? isCenter
+              ? "200px"
+              : "160px"
+            : isCenter
+            ? "400px"
+            : "320px";
+
           return (
             <div
               key={interview.id}
-              className="interview-card-item flex-shrink-0 bg-white rounded-xl shadow-sm border border-gray-100 p-6 relative"
+              className="interview-card-item flex-shrink-0 bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-6 relative"
               style={{
-                width: isCenter ? "400px" : "320px",
-                minWidth: isCenter ? "400px" : "320px",
+                width: cardWidth,
+                minWidth: cardMinWidth,
                 scrollSnapAlign: "center",
                 transform: `scale(${scale})`,
                 filter: isCenter
@@ -357,35 +394,35 @@ const InterviewCarousel = () => {
               </div>
 
               {/* Card Content */}
-              <div className="space-y-4 relative z-10">
+              <div className="space-y-2 md:space-y-4 relative z-10">
                 {/* Quote */}
-                <blockquote className="text-lg md:text-xl font-medium text-text leading-relaxed">
+                <blockquote className="text-sm md:text-lg lg:text-xl font-medium text-text leading-relaxed">
                   "{interview.quote}"
                 </blockquote>
 
                 {/* Insight */}
-                <div className="pt-3 border-t border-gray-100">
-                  <p className="text-sm text-text-muted leading-relaxed">
+                <div className="pt-2 md:pt-3 border-t border-gray-100">
+                  <p className="text-xs md:text-sm text-text-muted leading-relaxed">
                     {interview.insight}
                   </p>
                 </div>
 
                 {/* Name, Role, Major */}
-                <div className="pt-4 border-t border-gray-100">
-                  <div className="flex items-start gap-3">
+                <div className="pt-2 md:pt-4 border-t border-gray-100">
+                  <div className="flex items-start gap-2 md:gap-3">
                     {/* Profile Icon */}
                     <div className="flex-shrink-0">
-                      <UserCircle className="w-10 h-10 text-primary/60" />
+                      <UserCircle className="w-6 h-6 md:w-10 md:h-10 text-primary/60" />
                     </div>
                     {/* Profile Text */}
-                    <div className="flex-1">
-                      <p className="font-semibold text-text text-base">
+                    <div className="flex-1 min-w-0">
+                      <p className="font-semibold text-text text-xs md:text-base truncate">
                         {interview.name}
                       </p>
-                      <p className="text-sm text-text-muted mt-1">
+                      <p className="text-xs md:text-sm text-text-muted mt-1 truncate">
                         {interview.role}
                       </p>
-                      <p className="text-xs text-text-muted mt-1">
+                      <p className="text-xs text-text-muted mt-1 line-clamp-2">
                         {interview.major} • {interview.company}
                       </p>
                     </div>
@@ -399,7 +436,10 @@ const InterviewCarousel = () => {
         {/* Right Placeholder */}
         <div
           className="flex-shrink-0"
-          style={{ width: "320px", minWidth: "320px" }}
+          style={{
+            width: isMobile ? "160px" : "320px",
+            minWidth: isMobile ? "160px" : "320px",
+          }}
           aria-hidden="true"
         />
       </div>
