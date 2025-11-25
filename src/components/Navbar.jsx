@@ -50,13 +50,14 @@ const Navbar = () => {
           <div className="flex items-center md:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-text-muted hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+              className="inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+              style={{ backgroundColor: "transparent" }}
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
-                <X className="block h-6 w-6" />
+                <X className="block h-6 w-6" style={{ color: "black" }} />
               ) : (
-                <Menu className="block h-6 w-6" />
+                <Menu className="block h-6 w-6" style={{ color: "black" }} />
               )}
             </button>
           </div>

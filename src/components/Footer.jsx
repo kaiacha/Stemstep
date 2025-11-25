@@ -3,18 +3,18 @@ import { Heart } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 mt-auto">
-      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-white border-t border-gray-200 mt-auto relative z-10">
+      <div className="mt-20 md-12 max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className="text-text-muted text-sm">
+            <p className="text-text-muted text-[10px] md:text-sm">
               &copy; {new Date().getFullYear()} StemStep. All design rights
-              reserved. by Mikyo Kaia Cha.
+              reserved by @KaiaCha.
             </p>
           </div>
-          <div className="flex items-center space-x-1 text-sm text-text-muted">
+          <div className="flex items-center space-x-1 text-text-muted text-[10px] md:text-sm">
             <span>Arizona State University</span>
-            <Heart className="h-4 w-4 text-red-500 fill-current" />
+            <Heart className="h-3 w-3 md:h-4 md:w-4 text-red-500 fill-current" />
             <span>HSE 543 Learning Engineering</span>
           </div>
         </div>

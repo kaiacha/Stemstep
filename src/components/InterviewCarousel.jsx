@@ -280,7 +280,11 @@ const InterviewCarousel = () => {
       {canScrollLeft && (
         <button
           onClick={scrollLeft}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          className="absolute top-1/2 -translate-y-1/2 z-20"
+          style={{
+            backgroundColor: "transparent",
+            left: isMobile ? "-1rem" : "0",
+          }}
           aria-label="Previous card"
         >
           <ChevronLeft className="w-5 h-5 text-primary" />
@@ -448,7 +452,11 @@ const InterviewCarousel = () => {
       {canScrollRight && (
         <button
           onClick={scrollRight}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          className="absolute top-1/2 -translate-y-1/2 z-20"
+          style={{
+            backgroundColor: "transparent",
+            right: isMobile ? "-1rem" : "0",
+          }}
           aria-label="Next card"
         >
           <ChevronRight className="w-5 h-5 text-primary" />
