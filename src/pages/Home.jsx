@@ -43,9 +43,9 @@ const RealVoicesSection = () => {
         background: "linear-gradient(to bottom, #E3F2FD, #FFF8E1)",
       }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
         <div
-          className={`bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12 lg:p-16 transition-all duration-1000 ${
+          className={`bg-white/80 backdrop-blur-sm rounded-3xl  p-8 md:p-12 lg:p-16 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -115,7 +115,7 @@ const Home = () => {
 
         {/* Feature Cards Section */}
         <section className="py-24 bg-surface/50 backdrop-blur-sm">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl font-bold text-text mb-4">
                 Why Choose STEM?
@@ -127,9 +127,11 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-2 overflow-visible items-stretch">
               {features.map((feature, index) => (
-                <FeatureCard key={index} {...feature} />
+                <div key={index} className="overflow-visible h-full">
+                  <FeatureCard {...feature} />
+                </div>
               ))}
             </div>
           </div>

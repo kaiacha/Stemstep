@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="absolute -bottom-32 left-1/3 w-96 h-96 bg-accent/20 rounded-full blur-3xl opacity-50 mix-blend-multiply animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80 flex flex-col items-center justify-center text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-text mb-6">
           Your Future in{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">

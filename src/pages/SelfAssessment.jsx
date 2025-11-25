@@ -400,7 +400,7 @@ const SelfAssessment = () => {
 
   return (
     <div className="bg-background min-h-screen py-4">
-      <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
         <div className="bg-surface rounded-2xl shadow-lg border border-gray-200 p-6 md:p-8 relative">
           {/* Back to Explore Button - Top Left */}
           <button

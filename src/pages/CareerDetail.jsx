@@ -59,7 +59,7 @@ const CareerDetail = () => {
 
   return (
     <div className="bg-background min-h-screen py-8 md:py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
         {/* Breadcrumb */}
         <nav className="mb-8 flex items-center text-sm text-text-muted flex-wrap">
           <Link

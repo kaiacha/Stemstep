@@ -33,7 +33,10 @@ const AIGuidance = () => {
     <div className="fixed bottom-6 right-6 z-50">
       {/* Chat Window */}
       {isOpen && (
-        <div className="absolute bottom-16 right-0 w-80 md:w-96 bg-surface rounded-2xl shadow-xl border border-gray-200 overflow-hidden flex flex-col mb-4 animate-fade-in-up">
+        <div
+          className="absolute bottom-16 right-0 bg-surface rounded-2xl shadow-xl border border-gray-200 overflow-hidden flex flex-col mb-4 animate-fade-in-up"
+          style={{ width: "min(90vw, 800px)", minWidth: "400px" }}
+        >
           <div className="bg-primary p-4 flex justify-between items-center text-white">
             <div className="flex items-center gap-2">
               <Bot className="w-5 h-5" />
@@ -41,13 +44,14 @@ const AIGuidance = () => {
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="hover:bg-white/20 p-1 rounded-full transition-colors"
+              className=""
+              style={{ backgroundColor: "transparent", padding: "0" }}
             >
-              <X className="w-5 h-5" />
+              <X className="w-5 h-5 text-white" />
             </button>
           </div>
 
-          <div className="h-80 overflow-y-auto p-4 bg-gray-50 space-y-4">
+          <div className="h-96 md:h-[500px] overflow-y-auto p-4 bg-gray-50 space-y-4">
             {messages.map((msg, index) => (
               <div
                 key={index}
