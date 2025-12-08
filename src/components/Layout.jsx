@@ -5,9 +5,11 @@ import AIGuidance from "./AIGuidance";
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-background font-sans text-text">
+    <div className="flex flex-col min-h-screen bg-background font-sans text-text w-full overflow-x-hidden">
       <Navbar />
-      <main className="flex-grow overflow-x-hidden">{children}</main>
+      <main className="flex-grow w-full overflow-x-hidden overflow-y-visible">
+        {children}
+      </main>
       <AIGuidance />
       <Footer />
     </div>

@@ -55,7 +55,7 @@ const Activities = () => {
 
   return (
     <div className="bg-background min-h-screen pt-20 pb-12">
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80 pb-10">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-text mb-4">
             Try-It Activities

@@ -998,15 +998,15 @@ const SchoolRanking = () => {
 
   return (
     <section className="py-24 bg-background">
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80 pb-10">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-text mb-4">
             Top Schools by Major
           </h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Explore top-ranked universities for different STEM majors to help you
-            make informed decisions about your education.
+            Explore top-ranked universities for different STEM majors to help
+            you make informed decisions about your education.
           </p>
         </div>
 
@@ -1021,7 +1021,7 @@ const SchoolRanking = () => {
                   ? "bg-primary/10 border-2 border-primary shadow-md scale-105"
                   : "bg-white text-text border-2 border-gray-200 hover:border-primary hover:text-primary hover:bg-primary/5 hover:shadow-sm"
               }`}
-              style={selectedMajor === major ? { color: '#4f46e5' } : {}}
+              style={selectedMajor === major ? { color: "#4f46e5" } : {}}
             >
               {major}
             </button>
@@ -1030,7 +1030,7 @@ const SchoolRanking = () => {
 
         {/* Rankings Table */}
         <div className="bg-surface rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto scrollbar-hide">
             <table className="w-full">
               <thead className="bg-gray-50 border-b border-gray-200">
                 <tr>
@@ -1105,4 +1105,3 @@ const SchoolRanking = () => {
 };
 
 export default SchoolRanking;
-

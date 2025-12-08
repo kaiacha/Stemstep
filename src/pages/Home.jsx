@@ -74,12 +74,12 @@ const RealVoicesSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-16 md:py-24 relative overflow-hidden"
+      className="py-16 md:py-24 relative overflow-x-hidden"
       style={{
         background: "linear-gradient(to bottom, #E3F2FD, #FFF8E1)",
       }}
     >
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80 overflow-x-hidden pb-10">
         <div
           className={`bg-white/80 backdrop-blur-sm rounded-3xl  p-8 md:p-12 lg:p-16 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -201,8 +201,11 @@ const FeatureCardsSection = () => {
   }, [prefersReducedMotion]);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-surface/50 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
+    <section
+      ref={sectionRef}
+      className="py-24 bg-surface/50 backdrop-blur-sm overflow-x-hidden"
+    >
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80 overflow-x-hidden pb-10">
         <div
           className={`text-center max-w-3xl mx-auto mb-16 ${
             prefersReducedMotion
@@ -327,7 +330,7 @@ const SchoolRankingSection = () => {
   return (
     <div
       ref={sectionRef}
-      className={
+      className={`overflow-x-hidden ${
         prefersReducedMotion
           ? ""
           : `transition-all duration-1000 ${
@@ -335,7 +338,7 @@ const SchoolRankingSection = () => {
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
             }`
-      }
+      }`}
     >
       <SchoolRanking />
     </div>
@@ -344,9 +347,9 @@ const SchoolRankingSection = () => {
 
 const Home = () => {
   return (
-    <div className="flex flex-col relative">
+    <div className="flex flex-col relative w-full overflow-x-hidden">
       <InteractiveBackground />
-      <div className="relative z-10">
+      <div className="relative z-10 w-full overflow-x-hidden">
         <Hero />
 
         {/* Feature Cards Section */}

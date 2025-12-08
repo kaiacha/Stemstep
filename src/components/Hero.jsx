@@ -239,7 +239,7 @@ const Hero = () => {
         })}
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80 flex flex-col items-center justify-center text-center pointer-events-none">
+      <div className="relative z-10 max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80 pb-10 flex flex-col items-center justify-center text-center pointer-events-none">
         <h1
           className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-text mb-6 flex flex-wrap justify-center items-center gap-1 pointer-events-auto"
           style={{

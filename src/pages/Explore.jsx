@@ -97,7 +97,7 @@ const Explore = () => {
 
   return (
     <div className="bg-background min-h-screen pt-20 pb-8 md:pb-12">
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80 pb-10">
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-[2.0rem] md:text-4xl font-bold text-text mb-10 md:mb-20 text-center">

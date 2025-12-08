@@ -73,7 +73,7 @@ const Roadmaps = () => {
 
   return (
     <div className="bg-background min-h-screen py-12">
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80 pb-10">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-text mb-4">STEM Roadmaps</h1>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">

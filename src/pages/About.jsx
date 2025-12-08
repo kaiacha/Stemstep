@@ -327,18 +327,18 @@ const About = () => {
           </div>
 
           {/* Team Grid */}
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="max-w-7xl mx-auto overflow-visible">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 p-2 overflow-visible mb-12">
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
                   ref={(el) => {
                     if (el) teamCardRefs.current[index] = el;
                   }}
-                  className={`bg-surface rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-lg hover:scale-105 transition-all duration-300 flex flex-col ${
+                  className={`bg-surface rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-lg hover:scale-105 transition-all duration-400 flex flex-col overflow-visible ${
                     prefersReducedMotionInitial
                       ? ""
-                      : `transition-all duration-700 ${
+                      : `transition-all duration-200 ${
                           cardVisibilities[index]
                             ? "opacity-100 translate-y-0"
                             : "opacity-0 translate-y-8"
