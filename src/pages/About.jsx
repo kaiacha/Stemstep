@@ -13,25 +13,25 @@ import {
 const teamMembers = [
   {
     name: "Zane Reynolds",
-    role: "Team Leader, Electrical Engineering",
+    role: "Engineering Education Systems and Design",
     contributions:
-      "Led concept development, managed IRB submission, and aligned the project with the theoretical framework.",
+      "Led concept development, managed the IRB submission, and guided theoretical alignment.",
     linkedin: null,
     portfolio: null,
   },
   {
     name: "Mikyo Kaia Cha",
-    role: "Human Systems Engineering, UX Designer",
+    role: "Human Systems Engineering",
     contributions:
-      "Designed the website and information architecture, and conducted interviews and thematic coding analysis.",
+      "Designed the website’s UX and IA, and conducted all undergraduate interviews and thematic analysis.",
     linkedin: null,
     portfolio: null,
   },
   {
     name: "Rashmi Neelawathura",
-    role: "Human Systems Engineering",
+    role: "Engineering Education Systems and Design",
     contributions:
-      "Conducted research, led the professor interview, and contributed to data coding and analysis.",
+      "Led the professor interview, developed the codebook, and contributed to thematic analysis.",
     linkedin: null,
     portfolio: null,
   },
@@ -39,7 +39,7 @@ const teamMembers = [
     name: "Foysal Ahmed",
     role: "Civil Engineering",
     contributions:
-      "Conducted undergraduate interviews, supported research activities, and contributed to data coding and analysis.",
+      "Supported undergraduate interview facilitation and assisted in qualitative data coding.",
     linkedin: null,
     portfolio: null,
   },
@@ -47,7 +47,7 @@ const teamMembers = [
     name: "Jeremiah Brandon",
     role: "Human Systems Engineering",
     contributions:
-      "Conducted the high school counselor interview, contributed to research coordination, and assisted with data analysis.",
+      "Conducted the high school counselor interview and contributed to data analysis.",
     linkedin: null,
     portfolio: null,
   },
