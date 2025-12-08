@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState, useMemo } from "react";
 import {
   BookOpen,
   Users,
@@ -54,11 +54,116 @@ const teamMembers = [
 ];
 
 const About = () => {
+  const prefersReducedMotionInitial = useMemo(() => {
+    if (typeof window !== "undefined") {
+      return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    }
+    return false;
+  }, []);
+
+  const [headerVisible, setHeaderVisible] = useState(
+    prefersReducedMotionInitial
+  );
+  const [challengeVisible, setChallengeVisible] = useState(
+    prefersReducedMotionInitial
+  );
+  const [solutionVisible, setSolutionVisible] = useState(
+    prefersReducedMotionInitial
+  );
+  const [targetUsersVisible, setTargetUsersVisible] = useState(
+    prefersReducedMotionInitial
+  );
+  const [teamVisible, setTeamVisible] = useState(prefersReducedMotionInitial);
+  const [acknowledgmentVisible, setAcknowledgmentVisible] = useState(
+    prefersReducedMotionInitial
+  );
+  const [cardVisibilities, setCardVisibilities] = useState({});
+
+  const headerRef = useRef(null);
+  const challengeRef = useRef(null);
+  const solutionRef = useRef(null);
+  const targetUsersRef = useRef(null);
+  const teamRef = useRef(null);
+  const acknowledgmentRef = useRef(null);
+  const teamCardRefs = useRef([]);
+
+  useEffect(() => {
+    const prefersReducedMotion = prefersReducedMotionInitial;
+
+    if (prefersReducedMotion) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target === headerRef.current) {
+              setHeaderVisible(true);
+            } else if (entry.target === challengeRef.current) {
+              setChallengeVisible(true);
+            } else if (entry.target === solutionRef.current) {
+              setSolutionVisible(true);
+            } else if (entry.target === targetUsersRef.current) {
+              setTargetUsersVisible(true);
+            } else if (entry.target === teamRef.current) {
+              setTeamVisible(true);
+            } else if (entry.target === acknowledgmentRef.current) {
+              setAcknowledgmentVisible(true);
+            } else {
+              const index = teamCardRefs.current.indexOf(entry.target);
+              if (index !== -1) {
+                setCardVisibilities((prev) => ({ ...prev, [index]: true }));
+              }
+            }
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const refs = [
+      headerRef.current,
+      challengeRef.current,
+      solutionRef.current,
+      targetUsersRef.current,
+      teamRef.current,
+      acknowledgmentRef.current,
+    ].filter(Boolean);
+
+    refs.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    const currentTeamCardRefs = teamCardRefs.current;
+    currentTeamCardRefs.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      refs.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+      currentTeamCardRefs.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, [prefersReducedMotionInitial]);
+
   return (
     <div className="bg-background min-h-screen pt-20 pb-12">
       <div className="max-w-4xl mx-auto px-8 sm:px-12 md:px-24 lg:px-40 xl:px-64 2xl:px-80">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div
+          ref={headerRef}
+          className={`text-center mb-16 transition-all duration-1000 ${
+            prefersReducedMotionInitial
+              ? ""
+              : headerVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8"
+          }`}
+        >
           <h1 className="font-bold mb-6" style={{ fontSize: "2.4rem" }}>
             Bridging the STEM Opportunity Gap
           </h1>
@@ -69,7 +174,16 @@ const About = () => {
         </div>
 
         {/* Introduction Section */}
-        <section className="mb-16">
+        <section
+          ref={challengeRef}
+          className={`mb-16 transition-all duration-1000 ${
+            prefersReducedMotionInitial
+              ? ""
+              : challengeVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8"
+          }`}
+        >
           <div className="bg-surface rounded-2xl p-8 shadow-sm border border-gray-100">
             <h2 className="text-2xl font-bold text-text mb-4 flex items-center gap-2">
               <BookOpen className="text-primary w-6 h-6" />
@@ -93,7 +207,16 @@ const About = () => {
         </section>
 
         {/* The Solution / Learning Engineering */}
-        <section className="mb-16">
+        <section
+          ref={solutionRef}
+          className={`mb-16 transition-all duration-1000 ${
+            prefersReducedMotionInitial
+              ? ""
+              : solutionVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8"
+          }`}
+        >
           <div className="bg-surface rounded-2xl p-8 shadow-sm border border-gray-100">
             <h2 className="text-2xl font-bold text-text mb-4 flex items-center gap-2">
               <Lightbulb className="text-secondary w-6 h-6" />
@@ -138,7 +261,16 @@ const About = () => {
         </section>
 
         {/* Target Users */}
-        <section className="mb-32">
+        <section
+          ref={targetUsersRef}
+          className={`mb-32 transition-all duration-1000 ${
+            prefersReducedMotionInitial
+              ? ""
+              : targetUsersVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8"
+          }`}
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-surface rounded-2xl p-8 shadow-sm border border-gray-100">
               <h3 className="text-xl font-bold text-text mb-4 flex items-center gap-2">
@@ -163,7 +295,16 @@ const About = () => {
         </section>
 
         {/* Team Section */}
-        <section className="mb-16">
+        <section
+          ref={teamRef}
+          className={`mb-16 transition-all duration-1000 ${
+            prefersReducedMotionInitial
+              ? ""
+              : teamVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8"
+          }`}
+        >
           {/* Short border line */}
           <div className="flex justify-center mb-32 mt-8">
             <div className=" w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent rounded-full"></div>
@@ -191,7 +332,25 @@ const About = () => {
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
-                  className="bg-surface rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-lg hover:scale-105 transition-all duration-300 flex flex-col"
+                  ref={(el) => {
+                    if (el) teamCardRefs.current[index] = el;
+                  }}
+                  className={`bg-surface rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-lg hover:scale-105 transition-all duration-300 flex flex-col ${
+                    prefersReducedMotionInitial
+                      ? ""
+                      : `transition-all duration-700 ${
+                          cardVisibilities[index]
+                            ? "opacity-100 translate-y-0"
+                            : "opacity-0 translate-y-8"
+                        }`
+                  }`}
+                  style={
+                    prefersReducedMotionInitial
+                      ? {}
+                      : {
+                          transitionDelay: `${index * 150}ms`,
+                        }
+                  }
                 >
                   {/* Avatar/Icon */}
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -244,7 +403,16 @@ const About = () => {
           </div>
 
           {/* Acknowledgment */}
-          <div className="bg-surface/50 rounded-2xl p-8 text-center border border-gray-100">
+          <div
+            ref={acknowledgmentRef}
+            className={`bg-surface/50 rounded-2xl p-8 text-center border border-gray-100 transition-all duration-1000 ${
+              prefersReducedMotionInitial
+                ? ""
+                : acknowledgmentVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+            }`}
+          >
             <p className="text-text-muted leading-relaxed">
               We thank <strong className="text-text">Dr. Scotty Craig</strong>{" "}
               for his guidance throughout the course and for supporting our

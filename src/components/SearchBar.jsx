@@ -82,9 +82,28 @@ const SearchBar = () => {
             className={`px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm lg:text-base font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
               selectedChip === chip
                 ? "bg-primary text-white shadow-md scale-105"
-                : "bg-white text-text border border-gray-200 hover:border-primary hover:text-primary hover:bg-primary/5 hover:shadow-sm"
+                : "bg-white border border-gray-200 hover:border-primary hover:bg-primary hover:shadow-sm"
             }`}
-            style={selectedChip === chip ? {} : { backgroundColor: "white" }}
+            style={
+              selectedChip === chip
+                ? {}
+                : {
+                    backgroundColor: "white",
+                    color: "#0f172a",
+                  }
+            }
+            onMouseEnter={(e) => {
+              if (selectedChip !== chip) {
+                e.currentTarget.style.color = "white";
+                e.currentTarget.style.backgroundColor = "#4f46e5";
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (selectedChip !== chip) {
+                e.currentTarget.style.color = "#0f172a";
+                e.currentTarget.style.backgroundColor = "white";
+              }
+            }}
           >
             {chip}
           </button>

@@ -125,10 +125,30 @@ button {
   animation: blob 7s infinite;
 }
 
+/* Shake animation for STEM icons - slow and gentle shake */
+@keyframes shake {
+  0%, 100% {
+    transform: translate(0, 0) rotate(var(--rotation, 0deg)) scale(1) !important;
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate(-1px, 1px) rotate(calc(var(--rotation, 0deg) - 1deg)) scale(1.02) !important;
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate(1px, -1px) rotate(calc(var(--rotation, 0deg) + 1deg)) scale(1.02) !important;
+  }
+}
+
+.stem-icon.animate-shake,
+.animate-shake.stem-icon {
+  animation: shake 1.2s ease-in-out infinite !important;
+  will-change: transform;
+}
+
 /* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .animate-blob,
-  .animate-pulse {
+  .animate-pulse,
+  .animate-shake {
     animation: none;
   }
 }
